@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    background-image: url('image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    box-shadow: inset 5 0 50px rgba(0, 0, 0, 0.897);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: rgba(49, 49, 49, 0.541);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: top 0.3s;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-content {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(90deg, #c2c3c4, #76c7e5);
+}
+
+.styled-text {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.card p {
+    padding: 0 10px;
+    color: #666;
+}
+
+.card button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #003d80;
+}  
+
+.other-locations {
+    background-color: #e1e1e1;
+    padding: 20px;
+    text-align: center;
+}
+
+.other-locations h2 {
+    margin-bottom: 20px;
+}
+
+.location {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+}
+
+.location img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* Botón "Ir a Inicio" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #003d80;
+}
+
+/* Botón de WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+}
+
+.facebook {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.facebook img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos adicionales para el iframe en el footer */
+footer iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Media queries para móviles */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .location {
+        width: 45%;
+    }
+
+    .header-content {
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        bottom: 20%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .header-container {
+        padding: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .location {
+        width: 90%;
+    }
+}
